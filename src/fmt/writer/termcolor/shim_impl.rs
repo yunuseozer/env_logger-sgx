@@ -1,4 +1,5 @@
-use std::{io, sync::Mutex};
+use std::prelude::v1::*;
+use std::io;
 
 use crate::fmt::{WritableTarget, WriteStyle};
 
