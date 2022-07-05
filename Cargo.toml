@@ -21,12 +21,12 @@ members = [
 ]
 
 [dependencies]
-log = { rev = "sgx_1.1.4", features = ["std"], git = "https://github.com/yunuseozer/log-sgx" }
+log = { features = ["std"], git = "https://github.com/yunuseozer/log-sgx" }
 regex = { optional = true, git = "https://github.com/yunuseozer/regex-sgx" }
 termcolor = { rev = "sgx_1.1.4", optional = true, git = "https://github.com/yunuseozer/termcolor-sgx" }
 humantime = { rev = "sgx_1.1.4", optional = true, git = "https://github.com/yunuseozer/humantime-sgx" }
 #atty = { version = "0.2.5", optional = true }
-sgx_tstd = { rev = "v1.1.4", git = "https://github.com/apache/teaclave-sgx-sdk.git", optional = true }
+sgx_tstd = { rev = "v1.1.4-upgrade", git = "https://github.com/yunuseozer/incubator-teaclave-sgx-sdk.git", optional = true }
 
 [[test]]
 name = "regexp_filter"
